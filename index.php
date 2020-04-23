@@ -1,27 +1,29 @@
-<?php
-?>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Home - DDA</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<center>
-		<h1>Bem-vindos ao site DDR AGRO</h1>	
+    <!-- Bootstrap CSS -->
 
-		<div class="panel">
-			
-			<img src="img/img.jpg" width="80%">	
-			<a href="https://google.com"><h2>Cadastre-se já</h2></a>
-			
-		</div>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/estrutura.css" type="text/css">
 
-			
-	</center>>
+    <title>Hello, world!</title>
+  </head>
+  <body>
 
+    <div class="container-fluid">
+      
+      <div class="row linhaUmIndex p-5">
+        
+      </div>
 
-	
-</body>
+    </div>
+
+    <script src="js/jquery.js" ></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/bootstrap.bundle.js" type="text/javascript"></script>
+  </body>
 </html>

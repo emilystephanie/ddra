@@ -1,0 +1,13 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background: #e1e1e1;
+}
+
+.linhaUmIndex{
+	background: url(../img/bg-linha-um-index.jpg);
+	background-size: 100% auto;
+}
