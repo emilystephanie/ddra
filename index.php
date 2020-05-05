@@ -21,12 +21,11 @@ include_once("processa.php");
         </ul>
       </nav>
       <section>
-        <h1>Cadastro de funcionários</h1>
-        <hr><br><br>
+
+        <h1>Cadastrar funcionários</h1>
+        <br>
 
         <form method="POST" action="processa.php" onsubmit="">
-
-          <br><br>
 
           Nome: <br>
           <input type="text" name="nomefunc" id="nomefunc" class="campo" maxlength="40" required autofocus><br>
@@ -36,17 +35,40 @@ include_once("processa.php");
 
           Profissão: <br>
           <input type="text" name="profissaofunc" id="profissaofunc" class="campo" maxlength="40" required><br>
+          <br>
 
-          Sexo: <br>
+          <br>
+          Sexo:
+          <br>
+          <input type="radio"> F
+          <input type="radio"> M
+          <br>
+          <br>
+
+          Setor: <br>
           <select name="sexo" id="sexo">
-            <option value="F">Feminino</option>
-            <option value="M">Masculino</option>
+            <option value="F">Financeiro</option>
+            <option value="T">Tecnologia</option>
           </select>
           <br>
           <br>
-          <br>
+          Numero:<br>
+          <input type="number" id="numero" name="" min="10" max="100">
+          <br> <br>
 
-          <input type="submit" value="Cadastrar"  class="btn">
+          Telefone:<br>
+          <input type="number" value="telefone" >
+          <br><br>
+
+          Data de nascimento:<br>
+          <input type="date" value="datanascimentofunc" >
+          <br><br>
+
+          Insira aqui o RG digitalizado:<br>
+          <input type="file" value="" >
+          <br><br>
+
+          <input type="submit" value="Cadastrar"  class="btn" class="campo" maxlength="40" required>
 
         </form>
 
