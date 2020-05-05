@@ -1,8 +1,3 @@
-<? 
-include_once("conexao.php");
-include_once("processa.php");
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -25,13 +20,13 @@ include_once("processa.php");
         <h1>Cadastrar funcionários</h1>
         <br>
 
-        <form method="POST" action="processa.php" onsubmit="">
+        <form method="post" action="processa.php">
 
           Nome: <br>
-          <input type="text" name="nomefunc" id="nomefunc" class="campo" maxlength="40" required autofocus><br>
+          <input type="text" name="nomefunc" placeholder="Nome Completo" id="nomefunc" class="campo" maxlength="40" required autofocus><br>
           
           Email<br>
-          <input type="text" name="emailfunc" id="emailfunc" class="campo" maxlength="50" required><br>
+          <input type="text" name="emailfunc" placeholder="Digite seu e-mail"  id="emailfunc" class="campo" maxlength="50" required><br>
 
           Profissão: <br>
           <input type="text" name="profissaofunc" id="profissaofunc" class="campo" maxlength="40" required><br>
@@ -39,48 +34,44 @@ include_once("processa.php");
 
           Sexo:
           <br>
-          <input type="radio"> F
-          <input type="radio"> M
+          <input type="radio" id="sexofeminino" name="sexofeminino"> F
+          <input type="radio" id="sexomasculino" name="sexomasculino"> M
           <br>
           <br>
 
           Setor: <br>
-          <select name="sexo" id="sexo" class="campo">
+          <select name="setor" id="setor" class="campo">
             <option value="F">FINANCEIRO</option>
             <option value="T">TECNOLOGIA</option>
           </select>
           <br>
           <br>
+
           Numero:<br>
-          <input type="number" id="numero" name="" min="10" max="100" class="campo">
+          <input type="number" id="numero" placeholder="Digite o código do funcionário" name="numero" min="10" max="100" class="campo">
           <br> <br>
 
           Telefone:<br>
-          <input type="number" value="telefone" class="campo">
+          <input type="number" value="telefone" id="telefone" name="telefone" class="campo">
           <br><br>
 
           Data de nascimento:<br>
-          <input type="date" value="datanascimentofunc" class="campo">
+          <input type="date" value="datanascimentofunc" name="datanascimentofunc" id="datanascimentofunc" class="campo">
           <br><br>
 
           Insira aqui o RG digitalizado:<br>
           <input type="file" value="" >
           <br><br><br>
 
+          Observações:
+          <br>
+         <textarea name="observacoes" id="observacoes" class="campo"></textarea>
+
+          <br><br>
+
           <input type="submit" value="Cadastrar"  class="btn" class="campo" maxlength="40" required>
 
         </form>
-
-        <script >
-          
-          function Cadastrar(){
-
-            var nome = document.getElementeById("nomefunc").value;
-            var email = document.getElementeById("emailfunc").value;
-            var profissao = document.getElementeById("profissaofunc").value;
-
-          }
-        </script>
         
       </section>
       
