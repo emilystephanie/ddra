@@ -1,3 +1,5 @@
+#lembrar que deixei o usuario Nº 3 como fixo para editar e excluir.
+
 Para criar um repositório:
 - criar repositorio no github
 -clonar o repositorio na minha maquina
