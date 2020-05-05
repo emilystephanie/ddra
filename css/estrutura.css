@@ -23,7 +23,7 @@ body{
 
 nav{
 	width: 300px;
-	height: 675px;
+	height: 800px;
 	background-color: #444;
 	float: left;
 	box-sizing: border-box;
@@ -33,7 +33,7 @@ nav{
 section{
 
 	width: 870px;
-	height: 675px;
+	height: 800px;
 	margin-left: 10px;
 	float: left;
 	background-color: #fff;

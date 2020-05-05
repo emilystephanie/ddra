@@ -7,7 +7,7 @@ include_once("processa.php");
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <title>Sistema de cadastro</title>
+    <title>Cadastro de funcionários</title>
     <link rel="stylesheet" type="text/css" href="css/estrutura.css">
 
   </head>
@@ -37,7 +37,6 @@ include_once("processa.php");
           <input type="text" name="profissaofunc" id="profissaofunc" class="campo" maxlength="40" required><br>
           <br>
 
-          <br>
           Sexo:
           <br>
           <input type="radio"> F
@@ -46,27 +45,27 @@ include_once("processa.php");
           <br>
 
           Setor: <br>
-          <select name="sexo" id="sexo">
-            <option value="F">Financeiro</option>
-            <option value="T">Tecnologia</option>
+          <select name="sexo" id="sexo" class="campo">
+            <option value="F">FINANCEIRO</option>
+            <option value="T">TECNOLOGIA</option>
           </select>
           <br>
           <br>
           Numero:<br>
-          <input type="number" id="numero" name="" min="10" max="100">
+          <input type="number" id="numero" name="" min="10" max="100" class="campo">
           <br> <br>
 
           Telefone:<br>
-          <input type="number" value="telefone" >
+          <input type="number" value="telefone" class="campo">
           <br><br>
 
           Data de nascimento:<br>
-          <input type="date" value="datanascimentofunc" >
+          <input type="date" value="datanascimentofunc" class="campo">
           <br><br>
 
           Insira aqui o RG digitalizado:<br>
           <input type="file" value="" >
-          <br><br>
+          <br><br><br>
 
           <input type="submit" value="Cadastrar"  class="btn" class="campo" maxlength="40" required>
 

@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <title>Sistema de cadastro</title>
+    <title>Consultar funcionários</title>
     <link rel="stylesheet" type="text/css" href="css/estrutura.css">
   </head>
   <body>
@@ -21,15 +21,8 @@
           
           <input type="submit" value="Consultar" onclick="Consultar();"  class="btn">
 
-           <br><br>
 
-           Nome<br>
-            <input type="text" name="nome" class="campo" maxlength="40" required autofocus><br>
-            Email<br>
-            <input type="text" name="email" class="campo" maxlength="50" required><br>
 
-            Profissão<br>
-            <input type="text" name="profissao" class="campo" maxlength="40" required><br>
       </section>
       
     </div>
