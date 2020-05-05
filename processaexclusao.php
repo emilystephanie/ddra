@@ -12,7 +12,7 @@ $resultado_exclusao_funcionario = "DELETE FROM funcionarios WHERE id='$id';";
 
 $resultado_funcionario = mysqli_query($conexao, $resultado_exclusao_funcionario);
 
-echo  "<script>alert('Edições concluidas com Sucesso!);</script>";
+echo  "<script>alert('Exclusão concluida com Sucesso!);</script>";
 header("Location: index.php");
 
 
