@@ -13,7 +13,7 @@ $row_funcionario = mysqli_fetch_assoc($resultado_final_usuario);
 
   <head>
     <meta charset="utf-8">
-    <title>Editar funcionários</title>
+    <title>Excluir funcionários</title>
     <link rel="stylesheet" type="text/css" href="css/estrutura.css">
 
   </head>
@@ -26,14 +26,15 @@ $row_funcionario = mysqli_fetch_assoc($resultado_final_usuario);
           <a href="consultas.php"><li>Consultas</li></a>
           <a href="edicao.php"><li>Edições</li></a>
           <a href="exclusao.php"><li>Excluir Cadastro</li></a>
+
         </ul>
       </nav>
       <section>
 
-        <h1>Editar funcionários</h1>
+        <h1>Excluir funcionários</h1>
         <br>
 
-        <form method="post" action="processaedicao.php">
+        <form method="post" action="processaexclusao.php">
 
           <input type="hidden" name="id" value="<?php print $row_funcionario['id'];?>">
 
@@ -84,7 +85,7 @@ $row_funcionario = mysqli_fetch_assoc($resultado_final_usuario);
 
           <br><br>
 
-          <input type="submit" value="Editar"  class="btn" class="campo" maxlength="40" required>
+          <input type="submit" value="Excluir"  class="btn" class="campo" maxlength="40" required>
 
         </form>
         

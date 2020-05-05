@@ -14,6 +14,7 @@
           <a href="index.php"><li>Cadastro</li></a>
           <a href="consultas.php"><li>Consultas</li></a>
           <a href="edicao.php"><li>Edições</li></a>
+          <a href="exclusao.php"><li>Excluir Cadastro</li></a>
         </ul>
       </nav>
       <section>
