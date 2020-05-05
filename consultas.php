@@ -1,3 +1,13 @@
+<?php
+
+include_once("conexao.php");
+
+$result_funcionario = "SELECT * FROM funcionarios";
+$resultado_final_usuario = mysqli_query($conexao, $result_funcionario);
+$row_funcionario = mysqli_fetch_assoc($resultado_final_usuario);
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -11,6 +21,7 @@
         <ul class="menu">
           <a href="index.php"><li>Cadastro</li></a>
           <a href="consultas.php"><li>Consultas</li></a>
+          <a href="Edicao.php"><li>Edições</li></a>
         </ul>
       </nav>
       <section>
@@ -18,9 +29,8 @@
         <h1>Consultas de funcionários</h1>
         <hr><br><br>
 
-        <form method="post" action="processaconsulta.php">
+        <form method="post" action="">
 
-          <input type="submit" value="Consultar"  class="btn" class="campo" maxlength="40" required><br><br>
 
           <table border="1">
 
@@ -28,28 +38,29 @@
               
               <td>NOME </td>
               <td>E-MAIL </td>
-              <td>PROFISSÃO</td>
-              <td>SEXO</td>
               <td>SETOR</td>
               <td>NUMERO</td>
               <td>TELEFONE</td>
               <td>DATA NASCIMENTO</td>
-              <td>OBSERVAÇÕES</td>
 
             </tr>
-            <?php while($dado = $consultarealizada->fetch_array()){?>
+            <?php ?>
+
             <tr>
-              <td><?php print $dado["nome"];?> </td>
-              <td><?php print $dado["email"];?> </td>
-              <td><?php print $dado["profissao"];?> </td>
-              <td><?php print $dado["sexo"];?> </td>
-              <td><?php print $dado["setor"];?> </td>
-              <td><?php print $dado["numero"];?> </td>
-              <td><?php print $dado["telefone"];?> </td>
-              <td><?php print date("d/m/Y", strtotime($dado["datanascimento"]));?> </td>
-              <td><?php print $dado["observacoes"];?> </td>
+              <td><?php print $row_funcionario["nome"];?> </td>
+              <td><?php print $row_funcionario["email"];?> </td>
+              <?php if($row_funcionario["setor"] == 'F'){ ?>
+                <td>FINANCEIRO</td>
+              <?php } else{?>
+                <td>TECNOLOGIA</td>
+              <?php }?>
+
+              <td><?php print $row_funcionario["numero"];?> </td>
+              <td><?php print $row_funcionario["telefone"];?> </td>
+              <td><?php print date("d/m/Y", strtotime($row_funcionario["datanascimento"]));?> </td>
+          
             </tr>
-            <?php } ?>
+            <?php  ?>
 
           </table>
 

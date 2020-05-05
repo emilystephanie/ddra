@@ -28,4 +28,7 @@ VALUES ('$nome',
 
 $resultado_funcionario = mysqli_query($conexao, $resultado_cadastro_funcionario);
 
+header("Location: index.php");
+
+
 ?>
